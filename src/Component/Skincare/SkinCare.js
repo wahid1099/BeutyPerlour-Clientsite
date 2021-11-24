@@ -3,9 +3,12 @@ import {Button, Container, Typography} from "@mui/material";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import bg from '../../Image_Icon/Image/engin1.png';
+import Zoom from 'react-reveal/Zoom';
+
 const SkinCare = () => {
     return (
         <div>
+            <Zoom>
         <Container>
             <Box sx={{ flexGrow: 1 ,mt:20}} >
                 <Grid container spacing={2}>
@@ -71,6 +74,7 @@ const SkinCare = () => {
                 </Grid>
             </Box>
         </Container>
+        </Zoom>
         </div>
     );
 };

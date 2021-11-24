@@ -5,6 +5,8 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import { CardActionArea } from '@mui/material';
+import Flip from 'react-reveal/Flip';
+
 import {Link} from "react-router-dom";
 const OurServics = () => {
          const[services,setServices]=useState([]);
@@ -20,6 +22,7 @@ const OurServics = () => {
 
     return (
         <>
+        <Flip left>
         <Typography variant="h4"style={{ color: '#141515',marginTop: '70px'}}>
             Our Awesome Services
         </Typography>
@@ -70,7 +73,7 @@ const OurServics = () => {
         <Button variant="contained" style={{ backgroundColor: '#F63E7B',marginTop:'15px' }}>EXPLORE MORE</Button>
 
       </Container>
-  
+      </Flip>
         </>
 
     );

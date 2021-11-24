@@ -7,6 +7,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { Button, Alert,Typography } from '@mui/material';
+import Zoom from 'react-reveal/Zoom';
 
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
@@ -70,7 +71,7 @@ useEffect(() => {
 console.log(allappointments);
     return (
        
-        
+      <Zoom left>
     <TableContainer component={Paper}>
          <Typography variant="h5" sx={{mt:6}} gutterBottom>Manage Orders</Typography>
          {success && <Alert severity="success">Order Canceled successfully!</Alert>}
@@ -112,7 +113,7 @@ console.log(allappointments);
     </Table>
     
   </TableContainer>
-  
+  </Zoom>
     );
 };
 

@@ -6,6 +6,8 @@ import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
+import Zoom from 'react-reveal/Zoom';
+
 const AddServices = () => {
 
 
@@ -48,6 +50,7 @@ const AddServices = () => {
     }
 
     return (
+        <Zoom left>
         <Container sx={{mt:5}}>
         <Grid container spacing={2}
 
@@ -120,6 +123,7 @@ const AddServices = () => {
         </Grid>
 
     </Container>
+    </Zoom>
     );
 };
 

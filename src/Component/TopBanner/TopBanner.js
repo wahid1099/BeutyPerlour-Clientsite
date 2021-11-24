@@ -5,9 +5,12 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import bannerimg from '../../Image_Icon/Image/beautiful-young-asian-woman-touching-her-clean-face-with-fresh-healthy-skin-isolated-white-wall-beauty-cosmetics-facial-treatment-concept 1.png';
 import {Button, Container, Typography} from "@mui/material";
+import Slide from 'react-reveal/Slide';
+
 
 const TopBanner = () => {
     return (
+        <Slide left>
         <Container>
         <Box sx={{ flexGrow: 1 ,mt:8}}>
             <Grid container spacing={2}>
@@ -42,6 +45,7 @@ const TopBanner = () => {
             </Grid>
         </Box>
         </Container>
+        </Slide>
     );
 };
 

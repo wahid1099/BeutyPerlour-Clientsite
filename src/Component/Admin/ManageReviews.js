@@ -7,6 +7,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { Button, Alert,Typography } from '@mui/material';
+import Zoom from 'react-reveal/Zoom';
 
 const ManageReviews = () => {
     const[allreview,settAllReviews]=useState([]);
@@ -48,6 +49,7 @@ const ManageReviews = () => {
     
     
     return (
+      <Zoom>
         <TableContainer component={Paper}>
         <Typography variant="h5" sx={{mt:6}} gutterBottom>Manage Reviews</Typography>
         {success && <Alert severity="success">Review deleted successfully!</Alert>}
@@ -87,6 +89,7 @@ const ManageReviews = () => {
    </Table>
    
  </TableContainer>
+ </Zoom>
     );
 };
 

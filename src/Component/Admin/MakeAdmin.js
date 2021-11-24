@@ -1,6 +1,7 @@
 import { Button, TextField, Alert } from '@mui/material';
 import React, { useState } from 'react';
 import UseAuth from "../../Hooks/UseAuth";
+import Zoom from 'react-reveal/Zoom';
 
 
 const MakeAdmin = () => {
@@ -34,7 +35,9 @@ const MakeAdmin = () => {
     }
 
     return (
-        <div>  
+       
+            <Zoom left>
+                 <div>  
             <h2>Make Admin</h2>
             <form onSubmit={handleAdminSubmit}>
                 <TextField
@@ -46,8 +49,10 @@ const MakeAdmin = () => {
                 <Button type="submit" variant="contained">Make Admin</Button>
             </form>
             {success && <Alert severity="success">Made Admin successfully!</Alert>}
-        
-        </div>
+            </div> 
+            </Zoom>
+       
+      
     );
 };
 
